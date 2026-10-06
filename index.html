@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>«اولین خبر» | پایگاه خبری تحلیلی رسمی</title>
+  <meta name="description" content="پایگاه خبری تحلیلی اولین خبر؛ روایت تازه از مهمترین رویدادهای ایران و جهان در بالاترین استانداردهای حرفه‌ای روزنامه‌نگاری." />
+  <meta property="og:title" content="«اولین خبر» | پایگاه خبری تحلیلی رسمی" />
+  <meta property="og:description" content="روایت تازه از مهمترین رویدادهای سیاسی، اقتصادی، اجتماعی، فناوری، ورزش و بین‌الملل در اولین خبر." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- فونت فارسی وزیرمتن (Vazirmatn) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- استایل‌های اصلی پروژه -->
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ۱. نوار اطلاعات بالایی (Top Information Bar) -->
+  <aside class="top-info-bar" aria-label="اطلاعات لحظه‌ای و بازار">
+    <div class="container top-info-wrapper">
+      <div class="date-time-box">
+        <span class="live-persian-date">امروز، دوشنبه ۲۸ اسفند ۱۴۰۴</span>
+        <span class="dot"></span>
+        <span>آخرین به‌روزرسانی: <span class="live-persian-time">۱۲:۴۰</span></span>
+      </div>
+      <div class="market-tickers">
+        <span class="ticker-item"><span class="ticker-name">دلار:</span> <span class="ticker-val">۶۲,۴۵۰</span> <span class="ticker-change pos">▲ ۰.۴٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">یورو:</span> <span class="ticker-val">۶۷,۲۰۰</span> <span class="ticker-change pos">▲ ۰.۳٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">سکه:</span> <span class="ticker-val">۴۴,۸۰۰,۰۰۰</span> <span class="ticker-change pos">▲ ۱.۲٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">طلا ۱۸:</span> <span class="ticker-val">۳,۶۹۰,۰۰۰</span> <span class="ticker-change pos">▲ ۰.۸٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">بورس:</span> <span class="ticker-val">۲,۱۵۴,۳۹۰</span> <span class="ticker-change neg">▼ ۰.۱۵٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">آب‌وهوا:</span> <span class="ticker-val">تهران ۱۶°C آفتابی</span></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ۲. سربرگ اصلی رسانه (Sticky Header) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- سمت راست: نشان و عنوان برند -->
+      <a href="index.html" class="brand-logo-link" aria-label="صفحه اصلی اولین خبر">
+        <img src="assets/images/logo/logo.svg" alt="«اولین خبر»" class="brand-logo-img" />
+        <div class="brand-text-fallback">
+          <span class="brand-title">«اولین خبر»</span>
+          <span class="brand-tagline">روایت تازه از مهمترین خبرها</span>
+        </div>
+      </a>
+
+      <!-- منوی ناوبری اصلی دسکتاپ -->
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="active">خانه</a></li>
+          <li class="nav-item"><a href="news.html">اخبار</a></li>
+          <li class="nav-item"><a href="news.html?cat=سیاسی">سیاسی</a></li>
+          <li class="nav-item"><a href="news.html?cat=اقتصادی">اقتصادی</a></li>
+          <li class="nav-item"><a href="news.html?cat=اجتماعی">اجتماعی</a></li>
+          <li class="nav-item"><a href="news.html?cat=فناوری">فناوری</a></li>
+          <li class="nav-item"><a href="news.html?cat=ورزش">ورزش</a></li>
+          <li class="nav-item"><a href="news.html?cat=فرهنگ و هنر">فرهنگ و هنر</a></li>
+          <li class="nav-item"><a href="news.html?cat=بین‌الملل">بین‌الملل</a></li>
+          <li class="nav-item"><a href="about.html">درباره ما</a></li>
+          <li class="nav-item"><a href="contact.html">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <!-- اکشن‌های سربرگ (جستجو و منوی موبایل) -->
+      <div class="header-actions">
+        <button class="header-btn trigger-quick-search" aria-label="جستجوی خبر" title="جستجوی خبر">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="header-btn mobile-menu-toggle" aria-label="باز کردن منوی موبایل">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ۳. نوار اخبار فوری (Breaking News Bar) -->
+  <section class="breaking-news-bar" aria-label="اخبار فوری">
+    <div class="container breaking-news-inner">
+      <div class="breaking-badge">
+        <span class="live-pulse"></span>
+        <span>خبر فوری</span>
+      </div>
+      <div class="breaking-ticker-container">
+        <div class="breaking-ticker-wrapper">
+          <span class="ticker-headline-item" onclick="openArticleModal(1)">آخرین تحولات سیاسی کشور؛ تصمیم‌های جدید هماهنگی اقتصادی دولت اعلام شد</span>
+          <span class="ticker-headline-item" onclick="openArticleModal(2)">جدیدترین تصمیم‌های اقتصادی دولت در حوزه تسهیل تولید و مهار تورم</span>
+          <span class="ticker-headline-item" onclick="openArticleModal(4)">تازه‌ترین اخبار فناوری؛ ارتقای سه‌برابری زیرساخت پردازش هوش مصنوعی بومی</span>
+          <span class="ticker-headline-item" onclick="openArticleModal(3)">شاخص کل بورس اوراق بهادار تهران با جهش ۲۱ هزار واحدی آغاز به کار کرد</span>
+          <span class="ticker-headline-item" onclick="openArticleModal(2)">رایزنی‌های دیپلماتیک ۴۸ ساعته ژنو با صدور بیانیه مشترک پایان یافت</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ۴. نوار دسته‌بندی موضوعی افقی (Category Strip) -->
+  <nav class="category-strip-section" aria-label="دسته‌بندی موضوعات">
+    <div class="container">
+      <div class="category-strip">
+        <a href="news.html" class="category-pill active">همه</a>
+        <a href="news.html?cat=سیاسی" class="category-pill">سیاسی</a>
+        <a href="news.html?cat=اقتصادی" class="category-pill">اقتصادی</a>
+        <a href="news.html?cat=اجتماعی" class="category-pill">اجتماعی</a>
+        <a href="news.html?cat=فناوری" class="category-pill">فناوری</a>
+        <a href="news.html?cat=ورزش" class="category-pill">ورزش</a>
+        <a href="news.html?cat=فرهنگ و هنر" class="category-pill">فرهنگ و هنر</a>
+        <a href="news.html?cat=بین‌الملل" class="category-pill">بین‌الملل</a>
+        <a href="news.html?cat=علم" class="category-pill">علم</a>
+        <a href="news.html?cat=سلامت" class="category-pill">سلامت</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- بخش اصلی صفحه (Main Container) -->
+  <main class="container">
+
+    <!-- ۵. بخش هیرو تحریریه (Hero News Section) -->
+    <section class="hero-news-section" aria-label="خبر اصلی و ویژه">
+      <div class="editorial-hero-grid">
+
+        <!-- خبر غالب و اصلی (Major Story) -->
+        <article class="main-hero-card" onclick="openArticleModal(1)">
+          <div class="main-hero-img-wrap">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNGbzElY5a3v8b6ZKcTZPsycriHNztTKk0McrFI1knh-2GqYyYumYFziOgb6uEz-LoaXvcEfZ6ehV4KkzkSZesJsvDAXhIAnXbpoqlhRLEe55krPidYp28NYhsRh-U6s_7crwIydJr2w8sOGuvUZK5laDI41410yn-d3P--XCZZf46xOvP8VHVaxhsY6U78DYY2saACRLp-OdphfDG5hliQ1F9XzlMOa5tm7scujsmtRlNPLjpJ3eY" alt="تحولات جدید در سیاست‌های اقتصادی کشور بررسی شد" class="main-hero-img" />
+            <span class="hero-overlay-tag">سیاسی</span>
+          </div>
+          <div class="main-hero-content">
+            <h1 class="main-hero-headline">تحولات جدید در سیاست‌های اقتصادی کشور بررسی شد</h1>
+            <p class="main-hero-summary">جزئیات تازه‌ترین تصمیم‌ها و واکنش مسئولان را در این گزارش بخوانید. توافق مشترک بر سر متغیرهای کلان و هدایت اعتبارات بانکی به سوی طرح‌های صنعتی پیشران نهایی شد.</p>
+            <div class="news-card-meta">
+              <span class="meta-author">نیلوفر خرم</span>
+              <span class="meta-divider"></span>
+              <span>۲۸ اسفند ۱۴۰۴</span>
+              <span class="meta-divider"></span>
+              <span>۲ ساعت پیش</span>
+              <span class="meta-divider"></span>
+              <span>۱۲,۴۸۰ بازدید</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- اخبار فرعی مکمل هیرو (۳ الی ۴ خبر) -->
+        <div class="secondary-hero-feed">
+          <!-- خبر فرعی ۱ -->
+          <article class="secondary-hero-card" onclick="openArticleModal(2)">
+            <div class="secondary-hero-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGOl_EP_0_rcaT0Du42Sf2RkVcwKjYsPrI8686RxHoZRGwyh071T1yFCaJFRmFhNiLJ8ErzKwsoOqvked1Rou0rOY0RP88Vcv87R7IGO3YB4OtCIP_Lc4nIbDQvADQ-_Q0wj4OLLxcIdjeErQ8pNGy0r_h7_y9yhB6C5zjH4tnil53ngzVr07RNwZDJI_UhQ26KogPr2OLeZ32m2ecmSGaEztj8HoldpqADmNV-9MDxBT0h21w9RsY" alt="نشست اضطراری ژنو" />
+            </div>
+            <div class="secondary-hero-info">
+              <div>
+                <span class="card-category-label">بین‌الملل</span>
+                <h3 class="secondary-hero-headline">نشست اضطراری ژنو؛ توافق مقدماتی قدرت‌های منطقه‌ای بر سر سازوکار جامع صلح پایدار</h3>
+              </div>
+              <span class="card-time">۳ ساعت پیش</span>
+            </div>
+          </article>
+
+          <!-- خبر فرعی ۲ -->
+          <article class="secondary-hero-card" onclick="openArticleModal(3)">
+            <div class="secondary-hero-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1krd2Mv-7xuAdYgSTOrj00MIRKg8yu-s5Ngz3Bhk8rNhG2440MKWXju1GmEXXpe0W3Srz1M0IKzc_pGFf7MO7jAnHfUtZTkUlsNQe_BKro1YHI57UydjFE35sDLb4FFarbyWr2qNQoxxaHATJbmmyYXIFjw76bBavI4gnz7Ggv5jARNu4rfuTlK_qftADpAucsOBhSF1cropfJM3QYSE-dR-LUDtc-t2NvIAcrtFNLIixFKcnqN_" alt="بازار سرمایه امروز" />
+            </div>
+            <div class="secondary-hero-info">
+              <div>
+                <span class="card-category-label">اقتصادی</span>
+                <h3 class="secondary-hero-headline">بازار سرمایه امروز با تغییرات جدید و جهش شاخص‌ها آغاز به کار کرد</h3>
+              </div>
+              <span class="card-time">۴ ساعت پیش</span>
+            </div>
+          </article>
+
+          <!-- خبر فرعی ۳ -->
+          <article class="secondary-hero-card" onclick="openArticleModal(4)">
+            <div class="secondary-hero-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnYXjCAJncx4d8jLYO11n31f7YyKuHTVaoPXkX2DYUIMAzQJrRUr8hYtFGu8FR0gkQYuLEWo1I6VRd0tbXD_MEPzm7jo-qWCLHuHFNmroANfRwMxRQptkRwfvSjfmCIC8Vc6alEPX61viCCN4aZO9m_KYRqg904Sq3guqlEGcR3ht_BHc-5Z_rMfiejsRW6Seke34mjRYERDAc4fPY0aPbJvbGitUzIoI1V880FUJZiMfRFYtp3yvN" alt="هوش مصنوعی" />
+            </div>
+            <div class="secondary-hero-info">
+              <div>
+                <span class="card-category-label">فناوری</span>
+                <h3 class="secondary-hero-headline">نسل تازه ابزارهای هوش مصنوعی و ابررایانه‌های محاسباتی وارد مرحله جدیدی شد</h3>
+              </div>
+              <span class="card-time">۵ ساعت پیش</span>
+            </div>
+          </article>
+
+          <!-- خبر فرعی ۴ -->
+          <article class="secondary-hero-card" onclick="openArticleModal(5)">
+            <div class="secondary-hero-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ1qZSwk93jjkDDjrO56-N_CdWrXvouFAOh5PZnrliVXaxzDJziwE30mXhi5QXY2EtqNSY9dH9WoJQftRnFvtjs_yWXp63TMWzoegApsYSPY3eVHzVIeCwFgAMqj6hciOP3UhL6HsvEQy65eqT_zBs6yIKtXqjsAo9XF8hv5iXvDRTzOdrzCzslWPN7NDDFrPdbvJNnSdx4YzL4vOsWN3OjvwIwkqKlWbefxf8umR30-SLs_Hr68Be" alt="لیگ برتر فوتبال" />
+            </div>
+            <div class="secondary-hero-info">
+              <div>
+                <span class="card-category-label">ورزش</span>
+                <h3 class="secondary-hero-headline">بررسی تازهترین وضعیت تیم‌های لیگ برتر و تدارک اردوی نوروزی ملی‌پوشان</h3>
+              </div>
+              <span class="card-time">۶ ساعت پیش</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ۶. چیدمان دو ستونه اصلی تحریریه (ستون مقالات و سایدبار پربازدیدترین‌ها) -->
+    <div class="main-layout-grid">
+
+      <!-- ستون سمت راست: فید و بخش‌های تحریریه -->
+      <div class="primary-content-col">
+
+        <!-- بخش آخرین اخبار (Latest News Feed) -->
+        <section aria-label="آخرین اخبار تحریریه">
+          <div class="section-header">
+            <h2 class="section-title"><span class="section-title-dot"></span> آخرین اخبار</h2>
+            <a href="news.html" class="section-more-link">مشاهده همه اخبار ←</a>
+          </div>
+
+          <div class="latest-news-feed">
+            <!-- خبر ۱ -->
+            <article class="feed-item" onclick="openArticleModal(6)">
+              <div class="feed-thumb">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkMk72BGn0QJZ8Nv1zWQ5t6riDBW-ElAPeo86N_ipLcDjGjUyrWMMSuRuMgU9HeB6M2ATdUbcUFeFdjW_Vti8QEEalQbgRxqHRqnSDdx2Hm0tVIQ7kqZR264f6G8UjKMi_jlMymcAJuNgSufcTTTmmEba5yxxzX8qr1YzMBbowaNFvxrb5H1YMsuDmT3XeQ97o-lvevvaj7V_4jmfNMBFCLhRAGsP5yS63vHh2H8WyEX7cBrxN7sut" alt="کسب‌وکارهای دانش‌بنیان" />
+              </div>
+              <div class="feed-content">
+                <div>
+                  <span class="card-category-label">اقتصادی</span>
+                  <h3 class="feed-headline">تصمیم‌های تازه برای حمایت از کسب‌وکارهای دانش‌بنیان اعلام شد</h3>
+                  <p class="feed-summary">تصویب بسته تسهیلات کم‌بهره و معافیت‌های گمرکی ویژه برای خطوط تولید مبتنی بر نوآوری و صادرات‌محور با ضمانت‌نامه بدون وثیقه ملکی.</p>
+                </div>
+                <div class="news-card-meta">
+                  <span>رضا میرزایی</span>
+                  <span class="meta-divider"></span>
+                  <span>دیروز</span>
+                  <span class="meta-divider"></span>
+                  <span>۷,۶۰۰ بازدید</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- خبر ۲ -->
+            <article class="feed-item" onclick="openArticleModal(7)">
+              <div class="feed-thumb">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA7MJ4KXafHbTdfitTkZwS173jirUCX6O36AaYuQZ7wPB7J_oFDlxQetPyL5ctDNe0JCzmq5tY7abLN_sGyH7F2GaNfbMbgHBi8Tt6lUOl8XevJHQ3kFJ5jvd2VZM50UHM8Stwz00ZfpnGFtUAof7w1vcbHM6j9Gd6-b_N23zSAuo7rc25XbjX56Lzf4Wq_6uqFo37_1bRHcSJ6i0A69TsmseRSnyZUH6hZMUaKdGIXPSLTm8e9qwG" alt="نمایشگاه آثار هنرمندان" />
+              </div>
+              <div class="feed-content">
+                <div>
+                  <span class="card-category-label">فرهنگ و هنر</span>
+                  <h3 class="feed-headline">نمایشگاه جدید آثار هنرمندان جوان در موزه هنرهای معاصر افتتاح شد</h3>
+                  <p class="feed-summary">روایت بصری ۵۰ هنرمند نوگرا از هویت، حافظه جمعی و کهن‌الگوهای هنر اصیل ایرانی در قاب رسانه‌های معاصر و هنرهای تجسمی.</p>
+                </div>
+                <div class="news-card-meta">
+                  <span>مریم احمدی</span>
+                  <span class="meta-divider"></span>
+                  <span>دیروز</span>
+                  <span class="meta-divider"></span>
+                  <span>۶,۲۰۰ بازدید</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- خبر ۳ -->
+            <article class="feed-item" onclick="openArticleModal(8)">
+              <div class="feed-thumb">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACrpqkRVHm_soGCrvUWuShj09CWLsV8VDG3dku-rA3ucJFp1S-TXBhj-GmPQOo8Q-oYX73J-ucg0TfZlCep7Y26KSj7b33B7upus5EXOIsIi5c68NrMcYiHNXE01UVfGT-_vFx4qi1shPUazNkwa-uI3YeESwJj0Md_gkOKFFKfY7BVm7I8Skn2t7KHjy72uRyyit4Y24l4cDtqoopWG3KrWSH-3-73jTzWGJrjeKemc7PT1se7LFj" alt="تحولات اقتصادی منطقه" />
+              </div>
+              <div class="feed-content">
+                <div>
+                  <span class="card-category-label">بین‌الملل</span>
+                  <h3 class="feed-headline">گزارش جدید از تحولات اقتصادی منطقه و تقویت گذرگاه‌های ترانزیت بین‌المللی</h3>
+                  <p class="feed-summary">امضای توافقنامه چندجانبه کریدور شمال - جنوب میان پنج کشور همسایه با هدف دو برابر کردن حجم حمل بار ریلی و ایجاد تعرفه یکپارچه گمرکی.</p>
+                </div>
+                <div class="news-card-meta">
+                  <span>سپهر کاظمی</span>
+                  <span class="meta-divider"></span>
+                  <span>دیروز</span>
+                  <span class="meta-divider"></span>
+                  <span>۱۴,۱۰۰ بازدید</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- خبر ۴ -->
+            <article class="feed-item" onclick="openArticleModal(9)">
+              <div class="feed-thumb">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXvSUsOExRxMrXzIwfPsj6OTcIlSfxqpgxae8K1kLz9Fn4AvAu9Qp6-iXbQCBAQbrTT8Nslha_et7Sd1RH-k8nknvuZmT02l2kzniDY8NvWBB0wNfu6yvsHeIvGHiSAiMMoD20QSovKo-L8sgtiMKoYMajAW-TOCpBrT-NbnDEVuY5L8AZhw6Zcd_c8cNINYXtiFbGs9HCSz3CVSGsFoDODX1QX77DeV_d3ofKMWx5wl_WGJNyOmRj" alt="ماهواره‌های ارتباطی بومی" />
+              </div>
+              <div class="feed-content">
+                <div>
+                  <span class="card-category-label">علم</span>
+                  <h3 class="feed-headline">رونمایی از نسل جدید ماهواره‌های ارتباطی بومی در پژوهشگاه فضایی کشور</h3>
+                  <p class="feed-summary">آزمایش موفقیت‌آمیز فرستنده‌های باند کیو با قابلیت اتصال پایدار در مناطق کوهستانی و امدادرسانی اضطراری در بحران‌های طبیعی به پایان رسید.</p>
+                </div>
+                <div class="news-card-meta">
+                  <span>دکتر حامد بهرامی</span>
+                  <span class="meta-divider"></span>
+                  <span>۲ روز پیش</span>
+                  <span class="meta-divider"></span>
+                  <span>۱۱,۴۵۰ بازدید</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="view-all-btn-wrapper">
+            <a href="news.html" class="btn-outline-primary">
+              <span>مشاهده همه اخبار</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- بخش اخبار سیاسی (Politics Section) -->
+        <section style="margin-top: 48px;" aria-label="اخبار سیاسی">
+          <div class="section-header">
+            <h2 class="section-title"><span class="section-title-dot"></span> اخبار سیاسی</h2>
+            <a href="news.html?cat=سیاسی" class="section-more-link">مشاهده همه اخبار سیاسی ←</a>
+          </div>
+
+          <div class="politics-grid">
+            <!-- خبر بزرگ شاخص سیاسی -->
+            <article class="politics-featured" onclick="openArticleModal(1)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNGbzElY5a3v8b6ZKcTZPsycriHNztTKk0McrFI1knh-2GqYyYumYFziOgb6uEz-LoaXvcEfZ6ehV4KkzkSZesJsvDAXhIAnXbpoqlhRLEe55krPidYp28NYhsRh-U6s_7crwIydJr2w8sOGuvUZK5laDI41410yn-d3P--XCZZf46xOvP8VHVaxhsY6U78DYY2saACRLp-OdphfDG5hliQ1F9XzlMOa5tm7scujsmtRlNPLjpJ3eY" alt="سیاست کلان" class="politics-featured-img" />
+              <div class="politics-featured-body">
+                <span class="card-category-label">تحلیل سیاسی</span>
+                <h3 style="font-size: 1.15rem; font-weight: 800; color: #0B1320; line-height: 1.45;">سند جامع تعاملات بانکی و مالی در نشست هیئت وزیران تصویب شد</h3>
+                <p style="font-size: 0.875rem; color: #667085; line-height: 1.6;">دستورالعمل جامع تسهیل پرداخت‌های فرامرزی و رفع موانع تسویه ارزی صادرکنندگان بخش خصوصی وارد مرحله اجرا گردید.</p>
+                <span class="card-time">۲ ساعت پیش</span>
+              </div>
+            </article>
+
+            <!-- سه خبر کوچک‌تر جانبی -->
+            <div class="politics-side-list">
+              <article class="side-story-card" onclick="openArticleModal(2)">
+                <div class="side-story-thumb">
+                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGOl_EP_0_rcaT0Du42Sf2RkVcwKjYsPrI8686RxHoZRGwyh071T1yFCaJFRmFhNiLJ8ErzKwsoOqvked1Rou0rOY0RP88Vcv87R7IGO3YB4OtCIP_Lc4nIbDQvADQ-_Q0wj4OLLxcIdjeErQ8pNGy0r_h7_y9yhB6C5zjH4tnil53ngzVr07RNwZDJI_UhQ26KogPr2OLeZ32m2ecmSGaEztj8HoldpqADmNV-9MDxBT0h21w9RsY" alt="مذاکرات ژنو" />
+                </div>
+                <div>
+                  <h4 class="side-story-headline">گزارش وزیر امور خارجه از دستاوردهای رایزنی‌های فشرده ژنو</h4>
+                  <span class="card-time">۳ ساعت پیش</span>
+                </div>
+              </article>
+
+              <article class="side-story-card" onclick="openArticleModal(8)">
+                <div class="side-story-thumb">
+                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACrpqkRVHm_soGCrvUWuShj09CWLsV8VDG3dku-rA3ucJFp1S-TXBhj-GmPQOo8Q-oYX73J-ucg0TfZlCep7Y26KSj7b33B7upus5EXOIsIi5c68NrMcYiHNXE01UVfGT-_vFx4qi1shPUazNkwa-uI3YeESwJj0Md_gkOKFFKfY7BVm7I8Skn2t7KHjy72uRyyit4Y24l4cDtqoopWG3KrWSH-3-73jTzWGJrjeKemc7PT1se7LFj" alt="دیپلماسی منطقه‌ای" />
+                </div>
+                <div>
+                  <h4 class="side-story-headline">دیدار دوجانبه روسای کمیسیون امنیت ملی و روابط خارجی</h4>
+                  <span class="card-time">دیروز</span>
+                </div>
+              </article>
+
+              <article class="side-story-card" onclick="openArticleModal(19)">
+                <div class="side-story-thumb">
+                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWkt8iC3USEvkCMHMTxK72L2sVHPdemMBI5BOQ7BSDnJiH7O6a-HTor-WW_ZWjlLqY9StSOunqHQnhULgSuhrd5zL1aUKZ02FoQWXhmifbMzFbE4CAu3yX2aY7v1nGltJzIf0ftfFiW65HcoFBazyhskcuOkRdMhAG-FW9dCFAiGx9HJs_VC0ekwtt4_CTbeXZsCZ0hKPIUHock_9wdL8jeuscWKLZwoCpi0QxbIKBF0Kgpjb7wzUp" alt="مصوبات مجلس" />
+                </div>
+                <div>
+                  <h4 class="side-story-headline">بررسی روند اجرای قانون برنامه هفتم توسعه در صحن علنی</h4>
+                  <span class="card-time">۲ روز پیش</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- بخش اقتصاد (Economy Section: بازار، بورس، ارز، بانک، کسب‌وکار) -->
+        <section class="economy-section" aria-label="بخش اقتصاد">
+          <div class="section-header">
+            <h2 class="section-title"><span class="section-title-dot"></span> اقتصاد و بازار سرمایه</h2>
+            <a href="news.html?cat=اقتصادی" class="section-more-link">مشاهده همه اخبار اقتصادی ←</a>
+          </div>
+
+          <!-- داشبورد شاخص‌های کلان -->
+          <div class="economy-dashboard">
+            <div class="market-stat-card">
+              <span class="market-stat-header">دلار بازار آزاد</span>
+              <span class="market-stat-price">۶۲,۴۵۰</span>
+              <div class="market-stat-footer">
+                <span class="stat-unit">تومان</span>
+                <span class="stat-percent pos">▲ ۰.۴٪</span>
+              </div>
+            </div>
+            <div class="market-stat-card">
+              <span class="market-stat-header">سکه بهار آزادی</span>
+              <span class="market-stat-price">۴۴,۸۰۰,۰۰۰</span>
+              <div class="market-stat-footer">
+                <span class="stat-unit">تومان</span>
+                <span class="stat-percent pos">▲ ۱.۲٪</span>
+              </div>
+            </div>
+            <div class="market-stat-card">
+              <span class="market-stat-header">شاخص کل بورس</span>
+              <span class="market-stat-price">۲,۱۵۴,۳۹۰</span>
+              <div class="market-stat-footer">
+                <span class="stat-unit">واحد</span>
+                <span class="stat-percent neg">▼ ۰.۱۵٪</span>
+              </div>
+            </div>
+            <div class="market-stat-card">
+              <span class="market-stat-header">طلای ۱۸ عیار</span>
+              <span class="market-stat-price">۳,۶۹۰,۰۰۰</span>
+              <div class="market-stat-footer">
+                <span class="stat-unit">تومان / گرم</span>
+                <span class="stat-percent pos">▲ ۰.۸٪</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- کارت‌های دوگانه اقتصادی -->
+          <div class="cards-two-col">
+            <article class="editorial-card" onclick="openArticleModal(3)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1krd2Mv-7xuAdYgSTOrj00MIRKg8yu-s5Ngz3Bhk8rNhG2440MKWXju1GmEXXpe0W3Srz1M0IKzc_pGFf7MO7jAnHfUtZTkUlsNQe_BKro1YHI57UydjFE35sDLb4FFarbyWr2qNQoxxaHATJbmmyYXIFjw76bBavI4gnz7Ggv5jARNu4rfuTlK_qftADpAucsOBhSF1cropfJM3QYSE-dR-LUDtc-t2NvIAcrtFNLIixFKcnqN_" alt="تالار بورس" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">بورس و سرمایه</span>
+                <h3 class="editorial-card-headline">تحلیل بازار: سیگنال‌های تازه برای تزریق نقدینگی به صندوق‌های تثبیت</h3>
+                <p class="editorial-card-summary">ارزیابی روند دادوستد در صنایع پالایشی و خودرویی نشان‌دهنده تقویت بنیان‌های سرمایه‌گذاری میان‌مدت است.</p>
+                <span class="card-time">۴ ساعت پیش</span>
+              </div>
+            </article>
+
+            <article class="editorial-card" onclick="openArticleModal(16)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFwHISkONKIn533E_aFNFIBmcBwMqMlC7TCnjYzf_NYUNxOXRDSK8kbUPvN88EaJXOdCoHxcKsOftMyzz3kBZy0ueovUKBcp4O6g4v2UB882zoLC91gfV1ntV6_ffEwjkIl8m1umgSfvuNP6vnuNqBbfJpAsvtK2jv4p9556C1ChQUMq2suv3PNCuPPfdoqFlaFmlB41vlYmXU4H8M5r3AnGlQrXtlTrN9w9l1ifB8ulPnUZyGAwmB" alt="مسکن و ساختمان" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">بانک و مسکن</span>
+                <h3 class="editorial-card-headline">چشم‌انداز بخش مسکن در چارچوب برنامه‌های کلان دولت و شاخص‌های تورمی</h3>
+                <p class="editorial-card-summary">بررسی آماری قیمت مصالح، عوارض ساخت و راهکارهای عرضه مسکن استیجاری ارزان‌قیمت در کلان‌شهرها.</p>
+                <span class="card-time">۵ روز پیش</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- بخش جامعه (Society Section: آموزش، سلامت، شهری، اجتماعی، خانواده) -->
+        <section style="margin-top: 16px;" aria-label="بخش جامعه">
+          <div class="section-header">
+            <h2 class="section-title"><span class="section-title-dot"></span> جامعه و سلامت</h2>
+            <a href="news.html?cat=اجتماعی" class="section-more-link">مشاهده همه اخبار جامعه ←</a>
+          </div>
+
+          <div class="cards-two-col">
+            <article class="editorial-card" onclick="openArticleModal(11)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbWT4GsgM73OGzrznj8qEP68t5if5Zu4umTDqJ-oxbtC_BL6YUNhehlUcR3mJKJ4eND-ksNG_lX5lCyN4oLnzAsPM1pL8hzVH1_7789kUUIj3dBWHhiLovvzqnSvqiHrcm93Gwd2lVvK3EVvEytT6iXEKBt8xEFktVaQmhiyvmI7f36WVZAzNCbIQ1tBOJret3QNCca05rg98yL5d2fB_3Em-KVEHK5zmVzV7oLUC8EZB1xukQ0qoL" alt="جامعه و رفاه" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">رفاه اجتماعی</span>
+                <h3 class="editorial-card-headline">جدول زمان‌بندی رسمی واریز مستمری‌ها و پاداش پایان سال اعلام شد</h3>
+                <p class="editorial-card-summary">سازمان تأمین اجتماعی جزئیات دقیق و نوبت‌بندی الفبایی واریز مستقیم به حساب‌های بانکی را تشریح کرد.</p>
+                <span class="card-time">۳ روز پیش</span>
+              </div>
+            </article>
+
+            <article class="editorial-card" onclick="openArticleModal(10)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAak33jQaL9bSjR1xzFbHbAUoyTlCLBD6OuaHvHe2mD_8WF-Uw1p1JXCXta-8pCLWqaaY1p8UsUT8VIKaC3QaFsupep7ru--KqlPQQnaBIYaFlOZB0z_cjzqNBYTt0nWH0585uUjDaAxAULH8Xqo6h1i2uC-ynYK5YmBzxaXu8KgJbZp2lgAS6wLlUGEV5WGdunjydrr6ddv6Ok7puFpp9ln9o0hGeM3FS6MKRpUEcil9CARM_vwCY-" alt="پزشکی و سلامت" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">پزشکی و سلامت</span>
+                <h3 class="editorial-card-headline">توسعه داروی هوشمند هدفمند درمان دیابت با تکیه بر فرمولاسیون زیست‌پزشکی نوظهور</h3>
+                <p class="editorial-card-summary">نتایج فاز بالینی دومین داروی نوترکیب کنترل قند خون نشان‌دهنده اثربخشی پایدار با کمترین عوارض جانبی است.</p>
+                <span class="card-time">۲ روز پیش</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- بخش فناوری (Technology Section: هوش مصنوعی، موبایل، اینترنت، استارتاپ، گجت) -->
+        <section style="margin-top: 16px;" aria-label="بخش فناوری">
+          <div class="section-header">
+            <h2 class="section-title"><span class="section-title-dot"></span> فناوری و نوآوری</h2>
+            <a href="news.html?cat=فناوری" class="section-more-link">مشاهده همه اخبار فناوری ←</a>
+          </div>
+
+          <div class="cards-two-col">
+            <article class="editorial-card" onclick="openArticleModal(14)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXOML24VFxHxKfULrJI7VfaDRT0U0VhoEqQjayBtUqeVBIwuHb4s8JQo5y2CHRwLQ0wmOLLAKkpXhW6BalmzOOHdKGn0WkP3NPCGXUKrmjM2UdQfr_3UPCE5Ng8npl19kkfZEofbo1UL1t-bi-ot8zUiNXucZWRT4YMIzdLWP1YhwlkXCK27ZmkP6Dfc4VRvVJUKvDCGRxBGodtDKzl6SuJU0bsuU15lLn90pu1aYh206c-u8oYajV" alt="ارتباطات فیبر نوری" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">اینترنت و ارتباطات</span>
+                <h3 class="editorial-card-headline">پوشش فیبر نوری در ۸ کلان‌شهر به مرز ۵ میلیون خانوار متصل رسید</h3>
+                <p class="editorial-card-summary">افزایش چشمگیر سرعت اتصال ثابت به بالای ۳۰۰ مگابیت و بسترسازی برای خدمات ابری پیشرفته دانشگاهی.</p>
+                <span class="card-time">۴ روز پیش</span>
+              </div>
+            </article>
+
+            <article class="editorial-card" onclick="openArticleModal(22)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuFIpP7UYNqgVJWtbLYtVWzRD0XgAuQEC2BdyVyW3qciB9Re306oYzeS5f0rL-l7-puk4gTQOR3pt3INqUAAgC7NnoxqIYTcb8qfm3HfLDCD_5BNL7h0vmLPaAmtjYJ99nDRzR7nx3BJxuKfKw-mgvZ7-gFS0bsAyfu0MU-KYafwKEfPeUTFsFH3-w_5mvmfP54FihLks4wwik5ZWOpa-wNdB9hhLNIGJ0DQC2Fv1Pu4aqQs_8X3Ke" alt="رباتیک و هوش مصنوعی" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">رباتیک و تجهیزات</span>
+                <h3 class="editorial-card-headline">پیشرفت‌های شتابان نخبگان جوان در عرصه رباتیک جراحی و بازوهای هوشمند مصنوعی</h3>
+                <p class="editorial-card-summary">ثبت اختراع بازوی جراحی با دقت میکرونی در دانشگاه صنعتی شریف و مهار کامل لرزش دست جراح.</p>
+                <span class="card-time">هفته گذشته</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- بخش ورزش و فرهنگ (Sports & Culture) -->
+        <section style="margin-top: 16px;" aria-label="ورزش و فرهنگ">
+          <div class="section-header">
+            <h2 class="section-title"><span class="section-title-dot"></span> ورزش و فرهنگ و هنر</h2>
+            <a href="news.html?cat=ورزش" class="section-more-link">مشاهده همه ←</a>
+          </div>
+
+          <div class="cards-two-col">
+            <article class="editorial-card" onclick="openArticleModal(17)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ1qZSwk93jjkDDjrO56-N_CdWrXvouFAOh5PZnrliVXaxzDJziwE30mXhi5QXY2EtqNSY9dH9WoJQftRnFvtjs_yWXp63TMWzoegApsYSPY3eVHzVIeCwFgAMqj6hciOP3UhL6HsvEQy65eqT_zBs6yIKtXqjsAo9XF8hv5iXvDRTzOdrzCzslWPN7NDDFrPdbvJNnSdx4YzL4vOsWN3OjvwIwkqKlWbefxf8umR30-SLs_Hr68Be" alt="مسابقات ورزشی" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">ورزش آسیا</span>
+                <h3 class="editorial-card-headline">قرعه‌کشی مرحله حذفی مسابقات جام باشگاه‌های آسیا؛ رقبای نمایندگان ایران مشخص شدند</h3>
+                <p class="editorial-card-summary">دیدارهای حساس نمایندگان ایران در اسفندماه و بررسی شانس صعود در برابر حریفان مجهز منطقه.</p>
+                <span class="card-time">۶ روز پیش</span>
+              </div>
+            </article>
+
+            <article class="editorial-card" onclick="openArticleModal(18)">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA7MJ4KXafHbTdfitTkZwS173jirUCX6O36AaYuQZ7wPB7J_oFDlxQetPyL5ctDNe0JCzmq5tY7abLN_sGyH7F2GaNfbMbgHBi8Tt6lUOl8XevJHQ3kFJ5jvd2VZM50UHM8Stwz00ZfpnGFtUAof7w1vcbHM6j9Gd6-b_N23zSAuo7rc25XbjX56Lzf4Wq_6uqFo37_1bRHcSJ6i0A69TsmseRSnyZUH6hZMUaKdGIXPSLTm8e9qwG" alt="معماری و میراث کهن" class="editorial-card-img" />
+              <div class="editorial-card-body">
+                <span class="card-category-label">میراث و هنر</span>
+                <h3 class="editorial-card-headline">احیای شاهکارهای معماری کهن اصفهان در زیر ذره‌بین کارشناسان یونسکو</h3>
+                <p class="editorial-card-summary">پیشرفت ۹۵ درصدی مرمت اصیل گنبدهای صفوی و تایید استانداردهای فنی توسط هیئت بین‌المللی ناظران.</p>
+                <span class="card-time">۶ روز پیش</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- چندرسانه‌ای و مستند اختصاصی اولین خبر -->
+        <section class="multimedia-block" aria-label="چندرسانه‌ای و مستند">
+          <div class="multimedia-header">
+            <h2 class="multimedia-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              چندرسانه‌ای و مستند اختصاصی «اولین خبر»
+            </h2>
+            <span style="font-size: 0.8125rem; color: #98A2B3;">آرشیو گزارش‌های تصویری</span>
+          </div>
+
+          <div class="multimedia-featured-video" onclick="openArticleModal(13)">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWAWOHFHvmrl5PKeNueHsFM4v3hMbXM1BaXqIeL-HyfbAkeJooEcz_3BE78xVij0aNCM4a-pGNtoOH6Iaf5vZoJJNhbLFoZWDp5Tm400XCHglKmDTTM23IJpl6-MVdAHWRVJRVd3xBQG4ORlKIdb0gyYjcP2WJTOAEo6wWabuulxjhD7BbV0RwCLnDsm4PvmJlDvQAidpmBuetcxHR1jD_9zAwH-fvCRoZIkXiIqUFN7Dwur32vYQf" alt="مستند انرژی پاک" />
+            <div class="video-play-btn">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-badge">مستند تحلیلی</span>
+            <span class="video-duration">08:45</span>
+          </div>
+          <h3 class="video-caption">مستند اختصاصی اولین خبر: گام‌های استوار در مسیر توسعه انرژی‌های پاک و مزارع خورشیدی</h3>
+        </section>
+
+      </div>
+
+      <!-- ستون سمت چپ: سایدبار تحریریه (پربازدیدترین‌ها و پربحث‌ترین‌ها) -->
+      <aside class="sidebar-wrapper" aria-label="پربازدیدترین و پربحث‌ترین اخبار">
+
+        <!-- باکس ۱۰ خبر پربازدیدترین (Most Read 01 to 10) -->
+        <div class="sidebar-box">
+          <div class="sidebar-header">
+            <h3 class="sidebar-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1769E0" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              پربازدیدترین اخبار
+            </h3>
+            <span style="font-size: 0.75rem; color: #98A2B3;">۲۴ ساعت اخیر</span>
+          </div>
+
+          <div class="ranked-news-list">
+            <!-- 01 -->
+            <div class="ranked-item" onclick="openArticleModal(11)">
+              <span class="rank-number">۰۱</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">جدول زمان‌بندی رسمی واریز مستمری‌ها و پاداش پایان سال اعلام شد</h4>
+                <div class="ranked-meta">
+                  <span>اقتصادی</span>
+                  <span>•</span>
+                  <span>۴۸ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="ranked-item" onclick="openArticleModal(12)">
+              <span class="rank-number">۰۲</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">وضعیت راه‌ها و پیش‌بینی بارش برف در گردنه‌های کوهستانی کشور طی ۴۸ ساعت آینده</h4>
+                <div class="ranked-meta">
+                  <span>اجتماعی</span>
+                  <span>•</span>
+                  <span>۳۹ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="ranked-item" onclick="openArticleModal(17)">
+              <span class="rank-number">۰۳</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">قرعه‌کشی مرحله حذفی مسابقات جام باشگاه‌های آسیا؛ رقبای نمایندگان ایران</h4>
+                <div class="ranked-meta">
+                  <span>ورزش</span>
+                  <span>•</span>
+                  <span>۳۲ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="ranked-item" onclick="openArticleModal(19)">
+              <span class="rank-number">۰۴</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">آغاز ثبت‌نام دوره جدید کنکور سراسری با اعمال سوابق تحصیلی قطعی</h4>
+                <div class="ranked-meta">
+                  <span>آموزش</span>
+                  <span>•</span>
+                  <span>۲۴ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 05 -->
+            <div class="ranked-item" onclick="openArticleModal(5)">
+              <span class="rank-number">۰۵</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">بررسی تازهترین وضعیت تیم‌های لیگ برتر و تدارک اردوی نوروزی ملی‌پوشان</h4>
+                <div class="ranked-meta">
+                  <span>ورزش</span>
+                  <span>•</span>
+                  <span>۲۲ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 06 -->
+            <div class="ranked-item" onclick="openArticleModal(16)">
+              <span class="rank-number">۰۶</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">چشم‌انداز بخش مسکن در چارچوب برنامه‌های کلان دولت و شاخص‌های تورمی</h4>
+                <div class="ranked-meta">
+                  <span>مسکن</span>
+                  <span>•</span>
+                  <span>۲۱ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 07 -->
+            <div class="ranked-item" onclick="openArticleModal(20)">
+              <span class="rank-number">۰۷</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">هشدار پلیس فتا درباره ترفند جدید کلاهبرداری پیامکی با عنوان سود سهام</h4>
+                <div class="ranked-meta">
+                  <span>امنیت دیجیتال</span>
+                  <span>•</span>
+                  <span>۱۹ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 08 -->
+            <div class="ranked-item" onclick="openArticleModal(2)">
+              <span class="rank-number">۰۸</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">نشست اضطراری ژنو؛ توافق مقدماتی قدرت‌های منطقه‌ای بر سر سازوکار صلح</h4>
+                <div class="ranked-meta">
+                  <span>بین‌الملل</span>
+                  <span>•</span>
+                  <span>۱۸ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 09 -->
+            <div class="ranked-item" onclick="openArticleModal(3)">
+              <span class="rank-number">۰۹</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">بازار سرمایه امروز با تغییرات جدید و جهش شاخص‌ها آغاز به کار کرد</h4>
+                <div class="ranked-meta">
+                  <span>بورس</span>
+                  <span>•</span>
+                  <span>۱۵ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="ranked-item" onclick="openArticleModal(1)">
+              <span class="rank-number">۱۰</span>
+              <div class="ranked-info">
+                <h4 class="ranked-headline">تحولات جدید در سیاست‌های اقتصادی کشور با هماهنگی تیم اجرایی دولت بررسی شد</h4>
+                <div class="ranked-meta">
+                  <span>سیاسی</span>
+                  <span>•</span>
+                  <span>۱۲ هزار بازدید</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- باکس پربحث‌ترین اخبار (Most Commented) -->
+        <div class="sidebar-box">
+          <div class="sidebar-header">
+            <h3 class="sidebar-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              پربحث‌ترین اخبار
+            </h3>
+            <span style="font-size: 0.75rem; color: #98A2B3;">دیدگاه‌های مردمی</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="commented-item" onclick="openArticleModal(11)">
+              <h4 class="commented-headline">جدول زمان‌بندی رسمی واریز مستمری‌ها و پاداش پایان سال</h4>
+              <div class="commented-meta">
+                <span class="comment-badge">💬 ۶۳ دیدگاه</span>
+                <span>۳ روز پیش</span>
+              </div>
+            </div>
+
+            <div class="commented-item" onclick="openArticleModal(5)">
+              <h4 class="commented-headline">بررسی فهرست بازیکنان دعوت‌شده به اردوی تدارکاتی تیم ملی</h4>
+              <div class="commented-meta">
+                <span class="comment-badge">💬 ۵۴ دیدگاه</span>
+                <span>۶ ساعت پیش</span>
+              </div>
+            </div>
+
+            <div class="commented-item" onclick="openArticleModal(17)">
+              <h4 class="commented-headline">تحلیل شانس قهرمانی و ارزیابی قرعه سرخابی‌ها در آسیا</h4>
+              <div class="commented-meta">
+                <span class="comment-badge">💬 ۴۹ دیدگاه</span>
+                <span>۶ روز پیش</span>
+              </div>
+            </div>
+
+            <div class="commented-item" onclick="openArticleModal(2)">
+              <h4 class="commented-headline">بازتاب بیانیه مشترک پنج‌بندی نشست دیپلماتیک ژنو</h4>
+              <div class="commented-meta">
+                <span class="comment-badge">💬 ۴۲ دیدگاه</span>
+                <span>۳ ساعت پیش</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- باکس معتبرنامه و هویت رسانه‌ای اولین خبر -->
+        <div class="sidebar-box" style="background-color: #F7F8FA;">
+          <h4 style="font-size: 1.05rem; font-weight: 800; color: #0B1320; margin-bottom: 8px;">رسانه مستقل «اولین خبر»</h4>
+          <p style="font-size: 0.875rem; color: #667085; line-height: 1.7; margin-bottom: 14px;">مرجع اطلاع‌رسانی سریع و بی‌طرفانه با تمرکز بر سه اصل سرعت، دقت و شفافیت در روایت مهم‌ترین رویدادهای ملی و بین‌المللی.</p>
+          <a href="about.html" style="font-size: 0.875rem; font-weight: 700; color: #1769E0; display: inline-flex; align-items: center; gap: 4px;">
+            آشنایی با خط‌مشی تحریریه ←
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <!-- ۷. عضویت در خبرنامه تحریریه (Newsletter Section) -->
+    <section class="newsletter-banner" aria-label="عضویت در خبرنامه تحریریه">
+      <div class="newsletter-text">
+        <h2 class="newsletter-title">مهمترین خبرها را از دست ندهید</h2>
+        <p class="newsletter-desc">برای دریافت گزیده مهم‌ترین گزارش‌های تحلیلی، اخبار فوری و رویدادهای اقتصادی، عضو خبرنامه پایگاه خبری تحلیلی اولین خبر شوید.</p>
+      </div>
+      <div>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input type="email" class="newsletter-input" placeholder="ایمیل شما (مثلاً info@example.com)" required />
+          <button type="submit" class="newsletter-btn">عضویت</button>
+        </form>
+        <div class="newsletter-alert">عضویت شما در خبرنامه با موفقیت ثبت شد.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ۸. پاورقی رسانه (Footer) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <!-- ستون معرفی برند -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">«اولین خبر»</div>
+          <div class="footer-logo-tagline">روایت تازه از مهمترین خبرها</div>
+          <p style="font-size: 0.875rem; color: #98A2B3; line-height: 1.7;">
+            رسانه مستقل و معتبر فارسی‌زبان با تعهد به استانداردهای حرفه‌ای روزنامه‌نگاری، صحت‌سنجی اخبار و احترام به حقوق مخاطبان.
+          </p>
+        </div>
+
+        <!-- ستون ناوبری اصلی -->
+        <div>
+          <h4 class="footer-col-title">ناوبری سایت</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="news.html">اخبار و گزارش‌ها</a></li>
+            <li><a href="about.html">درباره اولین خبر</a></li>
+            <li><a href="contact.html">تماس با تحریریه</a></li>
+          </ul>
+        </div>
+
+        <!-- ستون دسته‌بندی‌ها -->
+        <div>
+          <h4 class="footer-col-title">دسته‌بندی‌های خبری</h4>
+          <ul class="footer-links-list">
+            <li><a href="news.html?cat=سیاسی">سیاسی و دیپلماسی</a></li>
+            <li><a href="news.html?cat=اقتصادی">اقتصادی و بازار</a></li>
+            <li><a href="news.html?cat=اجتماعی">جامعه و سلامت</a></li>
+            <li><a href="news.html?cat=فناوری">فناوری و هوش مصنوعی</a></li>
+            <li><a href="news.html?cat=ورزش">ورزش ایران و جهان</a></li>
+            <li><a href="news.html?cat=بین‌الملل">بین‌الملل و منطقه</a></li>
+          </ul>
+        </div>
+
+        <!-- ستون راهنمایی و شفافیت -->
+        <div>
+          <h4 class="footer-col-title">قوانین و استانداردها</h4>
+          <div class="footer-meta-box">
+            <p style="font-size: 0.8125rem; color: #D0D5DD; line-height: 1.6; margin-bottom: 10px;">
+              هرگونه بازنشر اخبار با ذکر منبع «اولین خبر» و درج پیوند فعال به گزارش مجاز است.
+            </p>
+            <ul class="footer-links-list">
+              <li><a href="about.html#ethics">منشور اخلاق حرفه‌ای</a></li>
+              <li><a href="about.html#privacy">حریم خصوصی و امنیت داده‌ها</a></li>
+              <li><a href="contact.html">ارسال سوژه و گزارش مردمی</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ردیف پایانی کپی‌رایت -->
+      <div class="footer-bottom-row">
+        <p class="copyright-text">تمامی حقوق برای اولین خبر محفوظ است. © ۱۴۰۴ Avalin Khabar</p>
+        <button class="back-to-top-btn">
+          <span>بازگشت به بالای صفحه</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ۹. منوی کشویی موبایل (Mobile Navigation Drawer) -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="منوی ناوبری همراه">
+    <div class="drawer-header">
+      <div style="display:flex; flex-direction:column;">
+        <span style="font-size:1.25rem; font-weight:900; color:#0B1320;">«اولین خبر»</span>
+        <span style="font-size:0.75rem; color:#667085;">روایت تازه از مهمترین خبرها</span>
+      </div>
+      <button class="drawer-close-btn" aria-label="بستن منو" style="font-size:1.5rem; color:#111827; padding:4px;">✕</button>
+    </div>
+    <nav class="drawer-nav-list">
+      <a href="index.html" class="drawer-nav-link active">خانه</a>
+      <a href="news.html" class="drawer-nav-link">اخبار</a>
+      <a href="news.html?cat=سیاسی" class="drawer-nav-link">سیاسی</a>
+      <a href="news.html?cat=اقتصادی" class="drawer-nav-link">اقتصادی</a>
+      <a href="news.html?cat=اجتماعی" class="drawer-nav-link">اجتماعی</a>
+      <a href="news.html?cat=فناوری" class="drawer-nav-link">فناوری</a>
+      <a href="news.html?cat=ورزش" class="drawer-nav-link">ورزش</a>
+      <a href="news.html?cat=فرهنگ و هنر" class="drawer-nav-link">فرهنگ و هنر</a>
+      <a href="news.html?cat=بین‌الملل" class="drawer-nav-link">بین‌الملل</a>
+      <a href="news.html?cat=علم" class="drawer-nav-link">علم</a>
+      <a href="news.html?cat=سلامت" class="drawer-nav-link">سلامت</a>
+      <hr style="border:0; border-top:1px solid #E5E7EB; margin:8px 0;" />
+      <a href="about.html" class="drawer-nav-link">درباره ما</a>
+      <a href="contact.html" class="drawer-nav-link">تماس با ما</a>
+    </nav>
+  </aside>
+
+  <!-- ۱۰. مودال جستجوی سریع سربرگ (Quick Search Modal) -->
+  <div id="quick-search-modal" class="search-modal-backdrop" aria-hidden="true">
+    <div class="search-modal-box">
+      <div class="search-modal-input-row">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1769E0" stroke-width="2.5" style="margin-left:10px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" placeholder="عبارت مورد نظر خود را برای جستجو تایپ کنید..." />
+        <button class="close-search-modal" aria-label="بستن پنجره جستجو" style="color:#667085; font-size:1.25rem;">✕</button>
+      </div>
+      <div class="search-modal-results">
+        <p style="padding:16px; text-align:center; color:#667085; font-size:0.875rem;">کلمه مورد نظر خود را تایپ فرمایید تا اخبار مرتبط نمایش داده شود.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ۱۱. مودال مطالعه کامل مقاله (Full Article Reader Modal) -->
+  <div id="article-reader-modal" class="article-modal-backdrop" aria-hidden="true">
+    <div class="article-modal-window">
+      <div class="modal-header-bar">
+        <span id="modal-art-category" class="modal-category-badge">سیاسی</span>
+        <div class="modal-controls">
+          <span style="font-size:0.75rem; color:#667085; margin-left:4px;">اندازه متن:</span>
+          <button id="reader-dec-font" class="modal-icon-btn" title="کاهش قلم" aria-label="کاهش اندازه قلم">A-</button>
+          <button id="reader-inc-font" class="modal-icon-btn" title="افزایش قلم" aria-label="افزایش اندازه قلم">A+</button>
+          <button id="reader-bookmark-btn" class="modal-icon-btn" title="نشان کردن خبر" aria-label="نشان کردن خبر">🔖</button>
+          <button id="reader-copy-link" class="modal-icon-btn" title="کپی پیوند خبر" aria-label="کپی پیوند خبر">🔗</button>
+          <button class="modal-icon-btn close-reader-modal" title="بستن" aria-label="بستن">✕</button>
+        </div>
+      </div>
+      <div class="modal-body-scroll">
+        <h2 id="modal-art-headline" class="modal-headline">عنوان مقاله</h2>
+        <div class="modal-meta-row">
+          <span id="modal-art-author">سرویس خبر تحریریه</span>
+          <span>•</span>
+          <span id="modal-art-date">۲۸ اسفند ۱۴۰۴</span>
+          <span>•</span>
+          <span id="modal-art-views">۱۲,۴۸۰ بازدید</span>
+        </div>
+        <img id="modal-art-image" src="" alt="تصویر خبر" class="modal-featured-img" />
+        <div class="modal-article-text">
+          <!-- متن کامل خبر به صورت پویا جایگزین می‌شود -->
+        </div>
+        <div id="modal-art-tags" class="modal-tags-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- اسکریپت‌های داده‌ها و هسته برنامه -->
+  <script src="assets/data.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

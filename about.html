@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درباره ما | «اولین خبر»</title>
+  <meta name="description" content="آشنایی با رسانه خبری «اولین خبر»؛ اصول تحریریه، ماموریت اطلاع‌رسانی، استانداردهای روزنامه‌نگاری و ارزش‌های سرعت، دقت و شفافیت." />
+  <meta property="og:title" content="درباره ما | «اولین خبر»" />
+  <meta property="og:description" content="خبر را سریع‌تر، دقیق‌تر و شفاف‌تر روایت می‌کنیم. منشور اخلاق حرفه‌ای و ماموریت رسانه‌ای اولین خبر." />
+  <meta property="og:type" content="website" />
+
+  <!-- فونت فارسی وزیرمتن -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- نوار اطلاعات بالایی -->
+  <aside class="top-info-bar" aria-label="اطلاعات لحظه‌ای">
+    <div class="container top-info-wrapper">
+      <div class="date-time-box">
+        <span class="live-persian-date">امروز، دوشنبه ۲۸ اسفند ۱۴۰۴</span>
+        <span class="dot"></span>
+        <span>آخرین به‌روزرسانی: <span class="live-persian-time">۱۲:۴۰</span></span>
+      </div>
+      <div class="market-tickers">
+        <span class="ticker-item"><span class="ticker-name">دلار:</span> <span class="ticker-val">۶۲,۴۵۰</span> <span class="ticker-change pos">▲ ۰.۴٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">طلا ۱۸:</span> <span class="ticker-val">۳,۶۹۰,۰۰۰</span> <span class="ticker-change pos">▲ ۰.۸٪</span></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- سربرگ رسانه -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo-link" aria-label="صفحه اصلی اولین خبر">
+        <img src="assets/images/logo/logo.svg" alt="«اولین خبر»" class="brand-logo-img" />
+        <div class="brand-text-fallback">
+          <span class="brand-title">«اولین خبر»</span>
+          <span class="brand-tagline">روایت تازه از مهمترین خبرها</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">خانه</a></li>
+          <li class="nav-item"><a href="news.html">اخبار</a></li>
+          <li class="nav-item"><a href="news.html?cat=سیاسی">سیاسی</a></li>
+          <li class="nav-item"><a href="news.html?cat=اقتصادی">اقتصادی</a></li>
+          <li class="nav-item"><a href="news.html?cat=اجتماعی">اجتماعی</a></li>
+          <li class="nav-item"><a href="news.html?cat=فناوری">فناوری</a></li>
+          <li class="nav-item"><a href="news.html?cat=ورزش">ورزش</a></li>
+          <li class="nav-item"><a href="news.html?cat=فرهنگ و هنر">فرهنگ و هنر</a></li>
+          <li class="nav-item"><a href="news.html?cat=بین‌الملل">بین‌الملل</a></li>
+          <li class="nav-item"><a href="about.html" class="active">درباره ما</a></li>
+          <li class="nav-item"><a href="contact.html">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-btn trigger-quick-search" aria-label="جستجو" title="جستجو">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="header-btn mobile-menu-toggle" aria-label="باز کردن منو">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- بخش سربرگ هیرو صفحه درباره ما -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="about-hero-tag">هویت رسانه‌ای و منشور تحریریه</span>
+      <h1 class="about-hero-title">درباره «اولین خبر»</h1>
+      <p class="about-hero-statement">«خبر را سریع‌تر، دقیق‌تر و شفاف‌تر روایت می‌کنیم.»</p>
+    </div>
+  </section>
+
+  <!-- محتوای اصلی درباره ما -->
+  <main class="container about-section">
+
+    <!-- بخش ۱: اولین خبر چیست؟ -->
+    <section class="about-card-lead" aria-label="معرفی اولین خبر">
+      <h2>اولین خبر چیست؟</h2>
+      <p>
+        «اولین خبر یک رسانه خبری فارسی است که تلاش می‌کند مهمترین رویدادهای ایران و جهان را با تمرکز بر سرعت، دقت و خوانایی در اختیار مخاطبان قرار دهد.»
+      </p>
+      <p style="margin-top: 14px; font-size: 0.95rem; color: #667085; line-height: 1.8;">
+        تحریریه اولین خبر با بهره‌گیری از روزنامه‌نگاران باسابقه و تکیه بر استانداردهای پیشرو رسانه‌های معاصر، جریان اطلاع‌رسانی را از فیلتر راستی‌آزمایی دقیق عبور می‌دهد تا روایتی شفاف و بدون جهت‌گیری‌های گمراه‌کننده از رویدادها پدید آورد.
+      </p>
+    </section>
+
+    <!-- بخش ۲: ماموریت ما (۳ اصل: سرعت، دقت، شفافیت) -->
+    <section style="margin-bottom: 56px;" aria-label="ماموریت ما">
+      <div style="text-align: center; margin-bottom: 32px;">
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: #0B1320; margin-bottom: 8px;">ماموریت ما</h2>
+        <p style="font-size: 1rem; color: #667085;">اصول بنیادینی که کلیه تصمیم‌های تحریریه «اولین خبر» بر پایه آن‌ها استوار است</p>
+      </div>
+
+      <div class="principles-grid">
+        <!-- اصل ۱: سرعت -->
+        <div class="principle-card">
+          <div class="principle-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="principle-title">سرعت</h3>
+          <p class="principle-desc">
+            اطلاع‌رسانی بلادرنگ و پوشش لحظه‌ای اخبار فوری در دقایق آغازین شکل‌گیری رویداد با استفاده از کانال‌های خبری مستقیم و خبرنگاران میدانی.
+          </p>
+        </div>
+
+        <!-- اصل ۲: دقت -->
+        <div class="principle-card">
+          <div class="principle-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+          </div>
+          <h3 class="principle-title">دقت</h3>
+          <p class="principle-desc">
+            صحت‌سنجی سخت‌گیرانه داده‌ها، ارجاع معتبر به اسناد بالادستی، پرهیز از تیترهای فریبنده (کلیک‌بیت) و رعایت بی‌طرفی در تحلیل‌ها.
+          </p>
+        </div>
+
+        <!-- اصل ۳: شفافیت -->
+        <div class="principle-card">
+          <div class="principle-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </div>
+          <h3 class="principle-title">شفافیت</h3>
+          <p class="principle-desc">
+            روشن ساختن منابع اطلاعاتی، تصحیح شجاعانه هرگونه خطای احتمالی با درج شناسه اصلاح و تفکیک آشکار میان گزارش خبری و یادداشت تحلیلی.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش ۳: موضوعاتی که پوشش می‌دهیم -->
+    <section style="margin-bottom: 56px;" aria-label="موضوعاتی که پوشش می‌دهیم">
+      <div style="text-align: center; margin-bottom: 32px;">
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: #0B1320; margin-bottom: 8px;">موضوعاتی که پوشش می‌دهیم</h2>
+        <p style="font-size: 1rem; color: #667085;">سرویس‌های تخصصی پایگاه خبری تحلیلی «اولین خبر» با نظارت دبیران خبره</p>
+      </div>
+
+      <div class="coverage-categories-grid">
+        <a href="news.html?cat=سیاسی" class="coverage-cat-box">
+          <div class="coverage-cat-icon">🏛️</div>
+          <h3 class="coverage-cat-name">سیاست</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">دولت، مجلس، تصمیمات کلان</p>
+        </a>
+
+        <a href="news.html?cat=اقتصادی" class="coverage-cat-box">
+          <div class="coverage-cat-icon">📈</div>
+          <h3 class="coverage-cat-name">اقتصاد</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">بورس، ارز، بانک، مسکن، تجارت</p>
+        </a>
+
+        <a href="news.html?cat=اجتماعی" class="coverage-cat-box">
+          <div class="coverage-cat-icon">👥</div>
+          <h3 class="coverage-cat-name">جامعه</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">آموزش، محیط زیست، حقوق شهروندی</p>
+        </a>
+
+        <a href="news.html?cat=فناوری" class="coverage-cat-box">
+          <div class="coverage-cat-icon">⚡</div>
+          <h3 class="coverage-cat-name">فناوری</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">هوش مصنوعی، موبایل، استارتاپ‌ها</p>
+        </a>
+
+        <a href="news.html?cat=ورزش" class="coverage-cat-box">
+          <div class="coverage-cat-icon">⚽</div>
+          <h3 class="coverage-cat-name">ورزش</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">فوتبال، لیگ‌ها، رویدادهای قهرمانی</p>
+        </a>
+
+        <a href="news.html?cat=فرهنگ و هنر" class="coverage-cat-box">
+          <div class="coverage-cat-icon">🎨</div>
+          <h3 class="coverage-cat-name">فرهنگ و هنر</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">سینما، موسیقی، کتاب، میراث کهن</p>
+        </a>
+
+        <a href="news.html?cat=بین‌الملل" class="coverage-cat-box">
+          <div class="coverage-cat-icon">🌐</div>
+          <h3 class="coverage-cat-name">بین‌الملل</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">دیپلماسی، تحولات منطقه و جهان</p>
+        </a>
+
+        <a href="news.html?cat=علم" class="coverage-cat-box">
+          <div class="coverage-cat-icon">🔬</div>
+          <h3 class="coverage-cat-name">علم و سلامت</h3>
+          <p style="font-size: 0.8125rem; color: #667085; margin-top: 4px;">پزشکی، هوافضا، کشفیات نوین</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- بخش ۴: خبر، وقتی ارزشمند است که درست روایت شود -->
+    <section class="editorial-story-banner" aria-label="نگاه تحریریه">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA7MJ4KXafHbTdfitTkZwS173jirUCX6O36AaYuQZ7wPB7J_oFDlxQetPyL5ctDNe0JCzmq5tY7abLN_sGyH7F2GaNfbMbgHBi8Tt6lUOl8XevJHQ3kFJ5jvd2VZM50UHM8Stwz00ZfpnGFtUAof7w1vcbHM6j9Gd6-b_N23zSAuo7rc25XbjX56Lzf4Wq_6uqFo37_1bRHcSJ6i0A69TsmseRSnyZUH6hZMUaKdGIXPSLTm8e9qwG" alt="معماری و میراث اصیل" class="editorial-story-img" />
+      <div class="editorial-story-content">
+        <h2 class="editorial-story-title">«خبر، وقتی ارزشمند است که درست روایت شود»</h2>
+        <p class="editorial-story-text">
+          در عصری که امواج بی‌پایان داده‌های تأییدنشده فضای دیجیتال را تسخیر کرده‌اند، وظیفه رسانه اصیل نه صرفاً انتشار پیشدستانه، بلکه تفکیک حقیقت از شایعه و ارائه زمینه فکری لازم برای درک عمیق‌تر رخدادهاست.
+        </p>
+        <p class="editorial-story-text">
+          ما در «اولین خبر» بر این باوریم که کلمه امانت است؛ تعهد ما پیش از هر چیز، به آگاهی عمومی، منافع جامعه و ارتقای سواد رسانه‌ای شهروندان است.
+        </p>
+      </div>
+    </section>
+
+    <!-- بخش منشور اخلاق حرفه‌ای تحریریه -->
+    <section id="ethics" style="background-color: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 36px; margin-bottom: 48px;">
+      <h3 style="font-size: 1.35rem; font-weight: 800; color: #0B1320; margin-bottom: 16px;">منشور اخلاق حرفه‌ای اولین خبر</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <div style="padding: 16px; background-color: #F7F8FA; border-radius: 8px;">
+          <h4 style="font-size: 1rem; font-weight: 700; color: #1769E0; margin-bottom: 6px;">حفظ استقلال تحریریه</h4>
+          <p style="font-size: 0.875rem; color: #667085; line-height: 1.6;">هیچ‌گونه منافع تجاری یا فشارهای سیاسی نباید بر انتخاب سوژه‌ها یا لحن گزارشگری اولین خبر تأثیر بگذارد.</p>
+        </div>
+        <div style="padding: 16px; background-color: #F7F8FA; border-radius: 8px;">
+          <h4 style="font-size: 1rem; font-weight: 700; color: #1769E0; margin-bottom: 6px;">احترام به حریم خصوصی</h4>
+          <p style="font-size: 0.875rem; color: #667085; line-height: 1.6;">پوشش وقایع اجتماعی همواره با صیانت از کرامت انسانی، پرهیز از قضاوت‌های نسنجیده و رعایت حقوق فردی انجام می‌گیرد.</p>
+        </div>
+        <div style="padding: 16px; background-color: #F7F8FA; border-radius: 8px;">
+          <h4 style="font-size: 1rem; font-weight: 700; color: #1769E0; margin-bottom: 6px;">پاسخگویی به مخاطبان</h4>
+          <p style="font-size: 0.875rem; color: #667085; line-height: 1.6;">تحریریه به صورت پیوسته پذیرای نقدها، دیدگاه‌ها و گزارش‌های ارسالی خوانندگان در بخش ارتباط با ما است.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- پاورقی رسانه -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">«اولین خبر»</div>
+          <div class="footer-logo-tagline">روایت تازه از مهمترین خبرها</div>
+          <p style="font-size: 0.875rem; color: #98A2B3; line-height: 1.7;">
+            رسانه مستقل و معتبر فارسی‌زبان با تعهد به استانداردهای حرفه‌ای روزنامه‌نگاری و صحت‌سنجی اخبار.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">ناوبری سایت</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="news.html">اخبار و گزارش‌ها</a></li>
+            <li><a href="about.html">درباره اولین خبر</a></li>
+            <li><a href="contact.html">تماس با تحریریه</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">دسته‌بندی‌های خبری</h4>
+          <ul class="footer-links-list">
+            <li><a href="news.html?cat=سیاسی">سیاسی</a></li>
+            <li><a href="news.html?cat=اقتصادی">اقتصادی</a></li>
+            <li><a href="news.html?cat=اجتماعی">اجتماعی</a></li>
+            <li><a href="news.html?cat=فناوری">فناوری</a></li>
+            <li><a href="news.html?cat=ورزش">ورزش</a></li>
+            <li><a href="news.html?cat=بین‌الملل">بین‌الملل</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">قوانین و استانداردها</h4>
+          <div class="footer-meta-box">
+            <p style="font-size: 0.8125rem; color: #D0D5DD; line-height: 1.6; margin-bottom: 10px;">
+              هرگونه بازنشر اخبار با ذکر منبع «اولین خبر» مجاز است.
+            </p>
+            <ul class="footer-links-list">
+              <li><a href="about.html#ethics">منشور اخلاق حرفه‌ای</a></li>
+              <li><a href="about.html#privacy">حریم خصوصی</a></li>
+              <li><a href="contact.html">ارسال گزارش مردمی</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">تمامی حقوق برای اولین خبر محفوظ است. © ۱۴۰۴ Avalin Khabar</p>
+        <button class="back-to-top-btn">
+          <span>بازگشت به بالای صفحه</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- منوی کشویی موبایل -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="منوی موبایل">
+    <div class="drawer-header">
+      <div>
+        <span style="font-size:1.25rem; font-weight:900; color:#0B1320;">«اولین خبر»</span>
+        <div style="font-size:0.75rem; color:#667085;">روایت تازه از مهمترین خبرها</div>
+      </div>
+      <button class="drawer-close-btn" aria-label="بستن" style="font-size:1.5rem; color:#111827;">✕</button>
+    </div>
+    <nav class="drawer-nav-list">
+      <a href="index.html" class="drawer-nav-link">خانه</a>
+      <a href="news.html" class="drawer-nav-link">اخبار</a>
+      <a href="news.html?cat=سیاسی" class="drawer-nav-link">سیاسی</a>
+      <a href="news.html?cat=اقتصادی" class="drawer-nav-link">اقتصادی</a>
+      <a href="news.html?cat=اجتماعی" class="drawer-nav-link">اجتماعی</a>
+      <a href="news.html?cat=فناوری" class="drawer-nav-link">فناوری</a>
+      <a href="news.html?cat=ورزش" class="drawer-nav-link">ورزش</a>
+      <a href="news.html?cat=فرهنگ و هنر" class="drawer-nav-link">فرهنگ و هنر</a>
+      <a href="news.html?cat=بین‌الملل" class="drawer-nav-link">بین‌الملل</a>
+      <a href="news.html?cat=علم" class="drawer-nav-link">علم</a>
+      <a href="news.html?cat=سلامت" class="drawer-nav-link">سلامت</a>
+      <hr style="border:0; border-top:1px solid #E5E7EB; margin:8px 0;" />
+      <a href="about.html" class="drawer-nav-link active">درباره ما</a>
+      <a href="contact.html" class="drawer-nav-link">تماس با ما</a>
+    </nav>
+  </aside>
+
+  <!-- مودال جستجوی سریع -->
+  <div id="quick-search-modal" class="search-modal-backdrop" aria-hidden="true">
+    <div class="search-modal-box">
+      <div class="search-modal-input-row">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1769E0" stroke-width="2.5" style="margin-left:10px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" placeholder="عبارت مورد نظر خود را تایپ کنید..." />
+        <button class="close-search-modal" aria-label="بستن" style="color:#667085; font-size:1.25rem;">✕</button>
+      </div>
+      <div class="search-modal-results"></div>
+    </div>
+  </div>
+
+  <!-- اسکریپت‌ها -->
+  <script src="assets/data.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

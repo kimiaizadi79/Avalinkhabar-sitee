@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اخبار و گزارش‌ها | «اولین خبر»</title>
+  <meta name="description" content="تازه‌ترین خبرها و گزارش‌های پایگاه خبری تحلیلی اولین خبر در بخش‌های سیاسی، اقتصادی، اجتماعی، فناوری، ورزش و بین‌الملل." />
+  <meta property="og:title" content="اخبار و گزارش‌ها | «اولین خبر»" />
+  <meta property="og:description" content="مرجع جامع آخرین اخبار روز و گزارش‌های ویژه تحریریه اولین خبر." />
+  <meta property="og:type" content="website" />
+
+  <!-- فونت فارسی وزیرمتن -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- نوار اطلاعات بالایی -->
+  <aside class="top-info-bar" aria-label="اطلاعات لحظه‌ای">
+    <div class="container top-info-wrapper">
+      <div class="date-time-box">
+        <span class="live-persian-date">امروز، دوشنبه ۲۸ اسفند ۱۴۰۴</span>
+        <span class="dot"></span>
+        <span>آخرین به‌روزرسانی: <span class="live-persian-time">۱۲:۴۰</span></span>
+      </div>
+      <div class="market-tickers">
+        <span class="ticker-item"><span class="ticker-name">دلار:</span> <span class="ticker-val">۶۲,۴۵۰</span> <span class="ticker-change pos">▲ ۰.۴٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">سکه:</span> <span class="ticker-val">۴۴,۸۰۰,۰۰۰</span> <span class="ticker-change pos">▲ ۱.۲٪</span></span>
+        <span class="ticker-item"><span class="ticker-name">بورس:</span> <span class="ticker-val">۲,۱۵۴,۳۹۰</span> <span class="ticker-change neg">▼ ۰.۱۵٪</span></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- سربرگ رسانه -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo-link" aria-label="صفحه اصلی اولین خبر">
+        <img src="assets/images/logo/logo.svg" alt="«اولین خبر»" class="brand-logo-img" />
+        <div class="brand-text-fallback">
+          <span class="brand-title">«اولین خبر»</span>
+          <span class="brand-tagline">روایت تازه از مهمترین خبرها</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">خانه</a></li>
+          <li class="nav-item"><a href="news.html" class="active">اخبار</a></li>
+          <li class="nav-item"><a href="news.html?cat=سیاسی">سیاسی</a></li>
+          <li class="nav-item"><a href="news.html?cat=اقتصادی">اقتصادی</a></li>
+          <li class="nav-item"><a href="news.html?cat=اجتماعی">اجتماعی</a></li>
+          <li class="nav-item"><a href="news.html?cat=فناوری">فناوری</a></li>
+          <li class="nav-item"><a href="news.html?cat=ورزش">ورزش</a></li>
+          <li class="nav-item"><a href="news.html?cat=فرهنگ و هنر">فرهنگ و هنر</a></li>
+          <li class="nav-item"><a href="news.html?cat=بین‌الملل">بین‌الملل</a></li>
+          <li class="nav-item"><a href="about.html">درباره ما</a></li>
+          <li class="nav-item"><a href="contact.html">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-btn trigger-quick-search" aria-label="جستجو" title="جستجو">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="header-btn mobile-menu-toggle" aria-label="باز کردن منو">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- هدر عنوان صفحه اخبار -->
+  <section class="news-page-header">
+    <div class="container">
+      <h1 class="news-page-title">آخرین اخبار</h1>
+      <p class="news-page-subtitle">تازه‌ترین خبرها و گزارش‌های اولین خبر در حوزه‌های گوناگون</p>
+    </div>
+  </section>
+
+  <!-- بخش اصلی محتوای صفحه اخبار -->
+  <main class="container">
+
+    <!-- پنل پیشرفته فیلتر دسته‌بندی و نوار جستجوی کلمات کلیدی -->
+    <section class="news-filter-box" aria-label="فیلتر و جستجوی اخبار">
+      
+      <!-- ردیف نوار جستجو -->
+      <div class="search-box-row">
+        <div class="search-input-wrapper">
+          <svg class="search-icon-inside" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="news-search-input" class="search-input-field" placeholder="جستجو در عناوین، دسته‌بندی و متن گزارش‌ها (مثلاً «هوش مصنوعی»، «بورس»، «ژنو»)..." />
+          <span id="news-search-clear" class="search-clear-btn" title="پاک کردن متن">✕</span>
+        </div>
+      </div>
+
+      <!-- دکمه‌های فیلتر دسته‌بندی با Vanilla JavaScript -->
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+        <div class="category-filter-chips">
+          <button class="filter-chip active" data-cat="همه">همه</button>
+          <button class="filter-chip" data-cat="سیاسی">سیاسی</button>
+          <button class="filter-chip" data-cat="اقتصادی">اقتصادی</button>
+          <button class="filter-chip" data-cat="اجتماعی">اجتماعی</button>
+          <button class="filter-chip" data-cat="فناوری">فناوری</button>
+          <button class="filter-chip" data-cat="ورزش">ورزش</button>
+          <button class="filter-chip" data-cat="فرهنگ و هنر">فرهنگ و هنر</button>
+          <button class="filter-chip" data-cat="بین‌الملل">بین‌الملل</button>
+          <button class="filter-chip" data-cat="علم">علم</button>
+          <button class="filter-chip" data-cat="سلامت">سلامت</button>
+        </div>
+
+        <div style="font-size: 0.8125rem; color: #667085; font-weight: 600;">
+          تعداد نتایج: <span id="news-results-count" style="color: #1769E0; font-weight: 800;">۲۲ گزارش</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- شبکه کارت‌های اخبار پویا (Dynamic News Cards Grid) -->
+    <section id="news-grid-target" class="news-cards-grid" aria-label="فهرست اخبار">
+      <!-- توسط main.js با مقالات معتبر assets/data.js رندر می‌شود -->
+    </section>
+
+    <!-- وضعیت عدم وجود نتیجه -->
+    <div id="news-no-results" class="no-results-box" role="status">
+      <div class="no-results-icon">🔍</div>
+      <h3 class="no-results-title">نتیجه‌ای برای جستجوی شما پیدا نشد.</h3>
+      <p class="no-results-desc">لطفاً املای کلمه را بررسی کرده یا دسته‌بندی دیگری را برای مشاهده انتخاب نمایید.</p>
+    </div>
+
+    <!-- بنر عضویت در خبرنامه تحریریه -->
+    <section class="newsletter-banner" aria-label="عضویت در خبرنامه">
+      <div class="newsletter-text">
+        <h2 class="newsletter-title">مهمترین خبرها را از دست ندهید</h2>
+        <p class="newsletter-desc">برای دریافت گزیده اخبار برگزیده، عضویت رایگان خود را در سامانه خبرنامه اولین خبر فعال نمایید.</p>
+      </div>
+      <div>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input type="email" class="newsletter-input" placeholder="ایمیل شما" required />
+          <button type="submit" class="newsletter-btn">عضویت</button>
+        </form>
+        <div class="newsletter-alert">عضویت شما در خبرنامه ثبت شد.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- پاورقی رسانه -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">«اولین خبر»</div>
+          <div class="footer-logo-tagline">روایت تازه از مهمترین خبرها</div>
+          <p style="font-size: 0.875rem; color: #98A2B3; line-height: 1.7;">
+            رسانه مستقل و معتبر فارسی‌زبان با تعهد به استانداردهای حرفه‌ای روزنامه‌نگاری و صحت‌سنجی اخبار.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">ناوبری سایت</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="news.html">اخبار و گزارش‌ها</a></li>
+            <li><a href="about.html">درباره اولین خبر</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">دسته‌بندی‌های خبری</h4>
+          <ul class="footer-links-list">
+            <li><a href="news.html?cat=سیاسی">سیاسی</a></li>
+            <li><a href="news.html?cat=اقتصادی">اقتصادی</a></li>
+            <li><a href="news.html?cat=اجتماعی">اجتماعی</a></li>
+            <li><a href="news.html?cat=فناوری">فناوری</a></li>
+            <li><a href="news.html?cat=ورزش">ورزش</a></li>
+            <li><a href="news.html?cat=بین‌الملل">بین‌الملل</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">قوانین و استانداردها</h4>
+          <div class="footer-meta-box">
+            <p style="font-size: 0.8125rem; color: #D0D5DD; line-height: 1.6; margin-bottom: 10px;">
+              هرگونه بازنشر اخبار با درج منبع «اولین خبر» مجاز است.
+            </p>
+            <ul class="footer-links-list">
+              <li><a href="about.html#ethics">منشور اخلاق حرفه‌ای</a></li>
+              <li><a href="about.html#privacy">حریم خصوصی</a></li>
+              <li><a href="contact.html">تماس با تحریریه</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">تمامی حقوق برای اولین خبر محفوظ است. © ۱۴۰۴ Avalin Khabar</p>
+        <button class="back-to-top-btn">
+          <span>بازگشت به بالای صفحه</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- منوی کشویی موبایل -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="منوی موبایل">
+    <div class="drawer-header">
+      <div>
+        <span style="font-size:1.25rem; font-weight:900; color:#0B1320;">«اولین خبر»</span>
+        <div style="font-size:0.75rem; color:#667085;">روایت تازه از مهمترین خبرها</div>
+      </div>
+      <button class="drawer-close-btn" aria-label="بستن منو" style="font-size:1.5rem; color:#111827;">✕</button>
+    </div>
+    <nav class="drawer-nav-list">
+      <a href="index.html" class="drawer-nav-link">خانه</a>
+      <a href="news.html" class="drawer-nav-link active">اخبار</a>
+      <a href="news.html?cat=سیاسی" class="drawer-nav-link">سیاسی</a>
+      <a href="news.html?cat=اقتصادی" class="drawer-nav-link">اقتصادی</a>
+      <a href="news.html?cat=اجتماعی" class="drawer-nav-link">اجتماعی</a>
+      <a href="news.html?cat=فناوری" class="drawer-nav-link">فناوری</a>
+      <a href="news.html?cat=ورزش" class="drawer-nav-link">ورزش</a>
+      <a href="news.html?cat=فرهنگ و هنر" class="drawer-nav-link">فرهنگ و هنر</a>
+      <a href="news.html?cat=بین‌الملل" class="drawer-nav-link">بین‌الملل</a>
+      <a href="news.html?cat=علم" class="drawer-nav-link">علم</a>
+      <a href="news.html?cat=سلامت" class="drawer-nav-link">سلامت</a>
+      <hr style="border:0; border-top:1px solid #E5E7EB; margin:8px 0;" />
+      <a href="about.html" class="drawer-nav-link">درباره ما</a>
+      <a href="contact.html" class="drawer-nav-link">تماس با ما</a>
+    </nav>
+  </aside>
+
+  <!-- مودال جستجوی سریع -->
+  <div id="quick-search-modal" class="search-modal-backdrop" aria-hidden="true">
+    <div class="search-modal-box">
+      <div class="search-modal-input-row">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1769E0" stroke-width="2.5" style="margin-left:10px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" placeholder="عبارت مورد نظر خود را تایپ کنید..." />
+        <button class="close-search-modal" aria-label="بستن" style="color:#667085; font-size:1.25rem;">✕</button>
+      </div>
+      <div class="search-modal-results"></div>
+    </div>
+  </div>
+
+  <!-- مودال مطالعه کامل مقاله -->
+  <div id="article-reader-modal" class="article-modal-backdrop" aria-hidden="true">
+    <div class="article-modal-window">
+      <div class="modal-header-bar">
+        <span id="modal-art-category" class="modal-category-badge">سیاسی</span>
+        <div class="modal-controls">
+          <span style="font-size:0.75rem; color:#667085; margin-left:4px;">اندازه متن:</span>
+          <button id="reader-dec-font" class="modal-icon-btn" title="کاهش قلم">A-</button>
+          <button id="reader-inc-font" class="modal-icon-btn" title="افزایش قلم">A+</button>
+          <button id="reader-bookmark-btn" class="modal-icon-btn" title="نشان کردن خبر">🔖</button>
+          <button id="reader-copy-link" class="modal-icon-btn" title="کپی پیوند خبر">🔗</button>
+          <button class="modal-icon-btn close-reader-modal" title="بستن">✕</button>
+        </div>
+      </div>
+      <div class="modal-body-scroll">
+        <h2 id="modal-art-headline" class="modal-headline">عنوان مقاله</h2>
+        <div class="modal-meta-row">
+          <span id="modal-art-author">تحریریه اولین خبر</span>
+          <span>•</span>
+          <span id="modal-art-date">۲۸ اسفند ۱۴۰۴</span>
+          <span>•</span>
+          <span id="modal-art-views">بازدیدها</span>
+        </div>
+        <img id="modal-art-image" src="" alt="تصویر خبر" class="modal-featured-img" />
+        <div class="modal-article-text"></div>
+        <div id="modal-art-tags" class="modal-tags-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- اسکریپت‌ها -->
+  <script src="assets/data.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
